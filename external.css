@@ -1,0 +1,324 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.body {
+		font-family: Helvetica, sans-serif;
+	}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+	position: relative;
+	height:150vh;
+	width: 30%;
+}
+
+.right {
+	position: relative;
+	height:150vh;
+	width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header { /*add tasks header*/
+		border-radius: 5px;
+		background-color: #FEE69C; /* #2a5e35*/
+		padding: 20px 15px;
+		font-family: Helvetica, sans-serif;
+		font-weight: bold;
+		color: black;
+		width: 90%;
+		
+	}
+	
+.checklist{ /*left side inner*/
+		/*margin-left:20px*/
+		margin-top:10px;
+		margin-bottom:50px;
+		height:80%;
+		border-radius: 5px;
+		padding: 20px 0 20px;
+		width: 90%;
+		background-color: #326E2F; /* #943847*/
+		
+}
+
+.box {
+		margin-top:25px;
+		margin-bottom:50px;
+		border-radius: 5px;
+		padding: 20px 0 10px;
+		width: 80%;
+		background-color: #a4161a; /* #943847*/
+	}
+	
+
+.maintimer{
+		margin-top:5px;
+		margin-bottom:20px;
+		border-radius: 5px;
+		padding: 25px 0 20px;
+		width: 93%;
+		background-color: #E34326; /* #F0544F*/
+}
+
+.timecustom{
+		margin-top:5px;
+		margin-bottom:5px;
+		border-radius: 5px;
+		padding: 25px 0 20px;
+		width: 93%;
+		background-color: #E34326; /* #943847*/
+		font-family: "Helvetica", sans-serif;
+		color:white;
+
+}
+
+.container-fluid .title {
+		padding-top: 25px;
+		color: white;
+	}
+	
+input[type="text"]{ 
+	font-size:15px;
+	font-family: Helvetica, sans-serif;
+}
+	
+input[type=button] {
+		background-color: #BF211E; 
+		color: white;
+		border: none;
+		border-radius: 9px;
+		box-shadow: 0 4px #e09f9f;
+		font-family: Helvetica, sans-serif;
+		padding: 6px 12px;
+		margin-bottom: 15px;
+		margin-left: 8px;
+		margin-right: 3px;
+	}
+	
+input[type=button]:hover {
+		transition: 0.3s;
+		background-color: #BCD379;
+		color: black;
+		border: 2px solid #2D642B;
+		border-radius: 9px;
+		box-shadow: 0 4px #77A154;
+	}
+	
+input[type=button]:active {
+	
+		transform: translateY(3px);
+	}
+
+#timerdiv {
+		font-size: 90px;
+		font-family: Helvetica, sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	
+
+	
+#pomodorotime {
+		margin-bottom: 5px;
+		width: 80px;
+		border: 2px solid #C34F64;
+		border-radius: 4px;
+	}
+	
+#pomodorobreak {
+		margin-bottom: 8px;
+		width: 80px;
+		border: 2px solid #C34F64;
+		border-radius: 4px;
+	}
+
+
+h1 {	
+		font-family: "Helvetica", sans-serif;
+		font-size:40px;
+	}
+
+.chklst_inp { /*checklist input form*/
+		margin: 0;
+		border: gray,solid;
+		border-radius: 5px;
+		width: 50%;
+		padding: 10px;
+		float: left;
+		font-size: 16px;
+	}
+
+.iter { /*checklist input form*/
+		margin: 0;
+		border: gray,solid;
+		border-radius: 5px;
+		width: 20%;
+		padding: 9px;
+		float: left;
+		font-size: 16px;
+	}
+
+.add_Button{ /*add task button*/
+		padding: 10px;
+		width: 25%;
+		background: #DDDD8B; /* #d9d9d9*/
+		color: #555;
+		float: left;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 5px;
+
+		
+	}
+
+.add_Button:hover {  /*add task button hover*/
+		background-color: rgb(189, 99, 99);
+		color:white;
+	}
+
+.up_Button{ /*to do list update button*/
+		padding: 10px;
+		/*margin-right:10px;
+		margin-left:28px;*/
+		background: #d9d9d9;
+		color: #555;
+		float: left;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 5px;
+		
+	}
+
+.up_Button:hover {
+		background-color: rgb(99, 130, 189);
+	}
+
+.res_Button{
+		padding: 10px;
+		background: #d9d9d9;
+		color: #555;
+		float: left;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 5px;
+	}
+
+.res_Button:hover {
+		background-color: rgb(189, 99, 99);
+	}
+
+
+.list{ /*to do list left*/
+	background-color: #FBB080;
+	margin-top:10px;
+	border-radius: 5px;
+	padding: 10px 15px;
+	/*margin-left:15px;*/
+	width: 90%;
+}
+
+.doneList {
+		border-radius: 3px;
+		color: rgb(77, 139, 77);
+		text-decoration: line-through;
+		background: rgb(197, 197, 197);
+		padding-left: 20px;
+		font-family: "Helvetica", monospace;
+		font-size: 20px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		text-align: left;
+	}
+
+
+
+.currentList { /*currently doing*/
+		border-radius: 3px;	
+		background:pink;
+		color: rgb(189, 99, 99);
+		font-weight: bold;
+		padding-left: 20px;
+		font-family: "Helvetica", monospace;
+		font-size: 20px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		text-align: left;
+	}
+
+.upcomingList {
+		border-radius: 3px;
+		background:#fff2e3;
+		color: #424242;
+		padding-left: 20px;
+		font-family: "Helvetica", monospace;
+		font-size: 20px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		text-align: left;
+	}
+
+.show { /*For the current task on top*/
+		background-color: #a4161a; /* #943847*/
+		padding: 20px;
+		font-family: "Helvetica", sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+		color:white;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		border-radius: 5px;
+		text-decoration: underline;
+	}
+
+
+.number {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 12px 16px 12px 16px;
+	  }
+
+.nopadding {
+		padding: 0 !important;
+		margin: 0 !important;
+	 }
+
+/*Footer*/
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 10px;
+}
+
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
